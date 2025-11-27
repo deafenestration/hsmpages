@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="2025 TAS 4 star unit selector" property="og:title" />
+<title>2025 TAS 4 Star Selector</title>
+<style>
+    :root {
+        --bg-body: #f4f6f8;
+        --bg-card: #ffffff;
+        --text-main: #2d3748;
+        --text-sub: #718096;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --color-green: #519e6a;
+        --color-green-bg: #f0fff4;
+        --color-yellow: #d4ac0d;
+        --color-yellow-bg: #fffae6;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-body);
+        color: var(--text-main);
+        margin: 0;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    p {
+        color: var(--text-sub);
+        margin-bottom: 1.5rem;
+        max-width: 800px;
+    }
+    .legend span {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+    .legend .l-green { color: var(--color-green); background: var(--color-green-bg); border: 1px solid var(--color-green); }
+    .legend .l-yellow { color: var(--color-yellow); background: var(--color-yellow-bg); border: 1px solid var(--color-yellow); }
+    .unit-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(90px,18%), 1fr));
+        gap: clamp(2px, 1vw, 10px);
+        padding: 0;
+        list-style: none;
+    }
+    .unit-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--bg-card);
+        border-radius: 4px;
+        text-decoration: none;
+        color: var(--text-main);
+        box-shadow: var(--shadow);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        overflow: hidden;
+        border: 2px solid transparent;
+        position: relative;
+    }
+    .unit-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+    .unit-card.green {
+        border-color: var(--color-green);
+        background-color: var(--color-green-bg);
+    }
+    .unit-card.yellow {
+        border-color: var(--color-yellow);
+        background-color: var(--color-yellow-bg);
+    }
+    .unit-card img {
+        width: 100%;
+        object-fit: contain;
+        margin-top: clamp(2px, 1vw, 8px);
+        filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+    }
+    .caption {
+        width: 100%;
+        padding: clamp(2px, 0.5vw, 6px) 2px clamp(4px, 1vw, 8px) 2px;
+        font-size: clamp(9px, 2.9vw, 0.85rem); 
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .unit-card.green .caption { color: var(--color-green); }
+    .unit-card.yellow .caption { color: var(--color-yellow); }
+
+
+</style>
+</head>
+<body>
+
+<header>
+    <h3>Paid ticket units (2025)</h3>
+    <h4>★★★★★</h4>
+</header>
+
+<ul class="unit-grid">
+    <li><a class="unit-card" href="https://housamo.wiki/Alice#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_alice03.png" alt="Alice"><div class="caption">H!Alice</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Nekros%26Bacchus#transient1"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_nekros02.png" alt="Nekros&Bacchus"><div class="caption">Nekros&Bacchus</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Licho#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_licho03.png" alt="Licho"><div class="caption">F!Licho</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Dagon#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_dagon04.png" alt="Dagon"><div class="caption">S!Dagon</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Oniwaka#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_oniwaka03.png" alt="Oniwaka"><div class="caption">F!Oniwaka</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Hougen#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_hougen03.png" alt="Hougen"><div class="caption">F!Hogen</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Xolotl#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_xolotl03.png" alt="Xolotl"><div class="caption">O!Xolotl</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Arc#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_arc03.png" alt="Arc"><div class="caption">V!Arc</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Bigfoot#transient1"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_bigfoot02.png" alt="Bigfoot"><div class="caption">Bigfoot</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Ashigara#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ashigara03.png" alt="Ashigara"><div class="caption">S!Ashigara</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Shiva#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_shiva03.png" alt="Shiva"><div class="caption">S!Shiva</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Kurogane#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_kurogane03.png" alt="Kurogane"><div class="caption">NG!Kurogane</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Tadikarao#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tadikarao03.png" alt="Tajikarao"><div class="caption">S!Tajikarao</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Fuxi#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_fuxi03.png" alt="Fuxi"><div class="caption">X!Fuxi</div></a></li>
+</ul>
+
+<header>
+    <h4>★★★★</h4>
+</header>
+<ul class="unit-grid">
+<li><a class="unit-card" href="https://housamo.wiki/Orgus#transient1"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_orgus02.png" alt="Orgus"><div class="caption">Orgus</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Sol#transient1"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_sol02.png" alt="Sol"><div class="caption">Sol</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Tadatomo#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tadatomo03.png" alt="V!Tadatomo"><div class="caption">V!Tadatomo</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Gabriel#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_gabriel03.png" alt="V!Gabriel"><div class="caption">V!Gabriel</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Barguest#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_barguest03.png" alt="V!Barguest"><div class="caption">V!Barguest</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Claude#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_claude03.png" alt="X!Claude"><div class="caption">X!Claude</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Aracne#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_aracne03.png" alt="S!Arachne"><div class="caption">S!Arachne</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Jugo#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_juugo03.png" alt="S!Jugo"><div class="caption">S!Jugo</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Maria#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_maria03.png" alt="S!Maria"><div class="caption">S!Maria</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Kagutsuchi#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_kagutsuchi03.png" alt="O!Kagutsuchi"><div class="caption">O!Kagutsuchi</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Ikutoshi#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ikutoshi03.png" alt="O!Ikutoshi"><div class="caption">O!Ikutoshi</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Nobuharu#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_nobuharu03.png" alt="F!Nobuharu"><div class="caption">F!Nobuharu</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Hakumen#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_hakumen03.png" alt="V!Hakumen"><div class="caption">V!Hakumen</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Furufumi#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_furufumi03.png" alt="F!Furufumi"><div class="caption">F!Furufumi</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Azathoth#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_azathoth03.png" alt="H!Azathoth"><div class="caption">H!Azathoth</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Algernon#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_algernon03.png" alt="S!Algernon"><div class="caption">S!Algernon</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Licht#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_licht03.png" alt="V!Licht"><div class="caption">V!Licht</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Shiro#transient2"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_shirou03.png" alt="V!Shiro"><div class="caption">V!Shiro</div></a></li>
+</ul>
+
+<header>
+    <h4>★★★</h4>
+</header>
+<ul class="unit-grid">
+<li><a class="unit-card" href="https://housamo.wiki/Orgus#transient0"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_orgus01.png" alt="Orgus"><div class="caption">Orgus</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Sol#transient0"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_sol01.png" alt="Sol"><div class="caption">Sol</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Nekros%26Bacchus#transient0"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_nekros01.png" alt="Nekros&Bacchus"><div class="caption">Nekros&Bacchus</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Dagon#transient0"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_dagon01.png" alt="Dagon"><div class="caption">Dagon</div></a></li>
+<li><a class="unit-card" href="https://housamo.wiki/Bigfoot#transient0"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_bigfoot01.png" alt="Bigfoot"><div class="caption">Bigfoot</div></a></li>
+</ul>
+
+</body>
+</html>
