@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="TAS rainbow ticket selector" property="og:title" />
+<title>TAS rainbow ticket selector</title>
+<style>
+    :root {
+        --bg-body: #f4f6f8;
+        --bg-card: #ffffff;
+        --text-main: #2d3748;
+        --text-sub: #718096;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --color-green: #519e6a;
+        --color-green-bg: #f0fff4;
+        --color-yellow: #d4ac0d;
+        --color-yellow-bg: #fffae6;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-body);
+        color: var(--text-main);
+        margin: 0;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    p {
+        color: var(--text-sub);
+        margin-bottom: 1.5rem;
+        max-width: 800px;
+    }
+    .legend span {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+    .legend .l-green { color: var(--color-green); background: var(--color-green-bg); border: 1px solid var(--color-green); }
+    .legend .l-yellow { color: var(--color-yellow); background: var(--color-yellow-bg); border: 1px solid var(--color-yellow); }
+    .unit-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(90px,18%), 1fr));
+        gap: clamp(2px, 1vw, 10px);
+        padding: 0;
+        list-style: none;
+    }
+    .unit-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--bg-card);
+        border-radius: 4px;
+        text-decoration: none;
+        color: var(--text-main);
+        box-shadow: var(--shadow);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        overflow: hidden;
+        border: 2px solid transparent;
+        position: relative;
+    }
+    .unit-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+    .unit-card.green {
+        border-color: var(--color-green);
+        background-color: var(--color-green-bg);
+    }
+    .unit-card.yellow {
+        border-color: var(--color-yellow);
+        background-color: var(--color-yellow-bg);
+    }
+    .unit-card img {
+        width: 100%;
+        object-fit: contain;
+        margin-top: clamp(2px, 1vw, 8px);
+        filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+    }
+    .caption {
+        width: 100%;
+        padding: clamp(2px, 0.5vw, 6px) 2px clamp(4px, 1vw, 8px) 2px;
+        font-size: clamp(9px, 2.9vw, 0.85rem); 
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .unit-card.green .caption { color: var(--color-green); }
+    .unit-card.yellow .caption { color: var(--color-yellow); }
+
+
+</style>
+</head>
+<body>
+
+<header>
+    <h3>Rainbow ticket units ★★★★★</h3>
+    <p>
+        You can only obtain 1 of this ticket. You cannot pick an owned unit.<br>
+        <span class="legend">Getting these units elsewhere is practically impossible, as they almost never get rerun banners. <br>
+		It's always better to pick a <span class="l-green">favorite</span> over gameplay meta here.</span>
+    </p>
+</header>
+
+<ul class="unit-grid">
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/kengo02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_kengo03.png" alt="Kengo"><div class="caption">Kengo</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/oniwaka02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_oniwaka02.png" alt="Oniwaka"><div class="caption">Oniwaka</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/claude02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_claude02.png" alt="Claude"><div class="caption">Claude</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/licht02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_licht02.png" alt="Licht"><div class="caption">Licht</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/duo02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_duo02.png" alt="Duo"><div class="caption">Duo</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/kotarou02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_kotarou02.png" alt="Kotaro"><div class="caption">Kotaro</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/magan02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_magan02.png" alt="Macan"><div class="caption">Macan</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/ophion02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ophion02.png" alt="Ophion"><div class="caption">Ophion</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/gabriel02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_gabriel02.png" alt="Gabriel"><div class="caption">Gabriel</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/snow02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_snow02.png" alt="Snow"><div class="caption">Snow</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/ded02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ded02.png" alt="Ded"><div class="caption">Ded</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/harlot02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_harlot02.png" alt="Babalon"><div class="caption">Babalon</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/horkeukamui02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_horkeukamui03.png" alt="Horkeukamui"><div class="caption">Horkeu Kamui</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tuatgua02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tuatgua02.png" alt="Tsathoggua"><div class="caption">Tsathoggua</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/chernobog02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_chernobog02.png" alt="Chernobog"><div class="caption">Chernobog</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/zabaniya02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_zabaniya02.png" alt="Zabaniyya"><div class="caption">Zabaniyya</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/ahab02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ahab02.png" alt="Ahab"><div class="caption">Ahab</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tangaroa02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tangaroa02.png" alt="Tangaroa"><div class="caption">Tangaroa</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/kurogane02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_kurogane02.png" alt="Kurogane"><div class="caption">Kurogane</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/aizen02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_aizen02.png" alt="Aizen"><div class="caption">Aizen</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/wakantanka02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_wakantanka02.png" alt="Wakantanka"><div class="caption">Wakan Tanka</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/shino02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_shino02.png" alt="Shino"><div class="caption">Shino</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tadikarao02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tadikarao02.png" alt="Tajikarao"><div class="caption">Tajikarao</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/gyuumaou02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_gyuumaou02.png" alt="Gyumao"><div class="caption">Gyumao</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/aegir02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_aegir02.png" alt="Aegir"><div class="caption">Aegir</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/surtr02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_surtr02.png" alt="Surtr"><div class="caption">Surtr</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tanngrisnir02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tanngrisnir02.png" alt="Tanngrisnir"><div class="caption">Tanngrisnir</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/takemaru02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_takemaru02.png" alt="Takemaru"><div class="caption">Takemaru</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tsukuyomi02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tsukuyomi02.png" alt="Tsukuyomi"><div class="caption">Tsukuyomi</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/korpokkur02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_korpokkur02.png" alt="Korpokkur"><div class="caption">Korpokkur</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/leib02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_leib02.png" alt="Leib"><div class="caption">Leib</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/hephaestus02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_hephaestus02.png" alt="Hephaestus"><div class="caption">Hephaestus</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/sanatkumara02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_sanatkumara02.png" alt="Sanatkumara"><div class="caption">Sanat Kumara</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tezcatlipoca02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tezcatlipoca02.png" alt="Tezcatlipoca"><div class="caption">Tezcatlipoca</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/jacob02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_jacob02.png" alt="Jacob"><div class="caption">Jacob</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/heracles02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_heracles02.png" alt="Heracles"><div class="caption">Heracles</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/horus02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_horus02.png" alt="Horus"><div class="caption">Horus</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/cthugha02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_cthugha02.png" alt="Cthugha"><div class="caption">Cthugha</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/bael02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_bael02.png" alt="Bael"><div class="caption">Bael</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/daikoku02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_daikoku02.png" alt="Daikoku"><div class="caption">Daikoku</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/shiva02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_shiva02.png" alt="Shiva"><div class="caption">Shiva</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/ellie02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ellie02.png" alt="Ellie"><div class="caption">Ellie</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/yoritomo02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_yoritomo02.png" alt="Yoritomo"><div class="caption">Yoritomo</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/volkh02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_volkh02.png" alt="Volkh"><div class="caption">Volkh</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/akihagongen02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_akihagongen02.png" alt="Akihagongen"><div class="caption">Akiha Gongen</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tindalos02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tindalos02.png" alt="Tindalos"><div class="caption">Tindalos</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/fuxi02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_fuxi02.png" alt="Fuxi"><div class="caption">Fuxi</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/sandayu02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_sandayu02.png" alt="Sandayu"><div class="caption">Sandayu</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/tuaring02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_tuaring02.png" alt="Tuaring"><div class="caption">Tuaring</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/perun02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_perun02.png" alt="Perun"><div class="caption">Perun</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/ulaanbaatar02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ulaanbaatar02.png" alt="Ulaanbaatar"><div class="caption">Ulaanbaatar</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/qursha02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_qursha02.png" alt="Qursha"><div class="caption">Qursha</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/amduscias02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_amduscias02.png" alt="Amduscias"><div class="caption">Amduscias</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/oscar02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_oscar02.png" alt="Oscar"><div class="caption">Oscar</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/ahuramazda02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_ahuramazda02.png" alt="Ahuramazda"><div class="caption">Ahura Mazda</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/loki02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_loki02.png" alt="Loki"><div class="caption">Loki</div></a></li>
+<li><a class="unit-card" href="https://housamo-skill.netlify.app/charas/shamash02"><img src="https://cdn.housamo.xyz/housamo/unity/Android/icon/icon_shamash02.png" alt="Shamash"><div class="caption">Shamash</div></a></li>
+</ul>
+
+</body>
+</html>
