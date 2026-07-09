@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<head>
+    <title>Housamo character data</title>
+    <style>
+        body {
+            font-family: sans-serif;        
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            cursor: pointer;
+            user-select: none;
+        }
+        th:hover {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Housamo character data</h2>
+    <p>Click on any column header to sort</p>
+
+    <table id="charTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0, false)">Name</th>
+                <th onclick="sortTable(1, true)">Height (cm)</th>
+                <th onclick="sortTable(2, true)">Weight (kg)</th>
+                <th onclick="sortTable(3, true)">Birthday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-sort="Shiro">Shiro</td>
+                <td data-sort="178">178</td>
+                <td data-sort="82">82</td>
+                <td data-sort="0820">August 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Kengo">Kengo</td>
+                <td data-sort="182">182</td>
+                <td data-sort="105">105</td>
+                <td data-sort="1026">October 26</td>
+            </tr>
+            <tr>
+                <td data-sort="Moritaka">Moritaka</td>
+                <td data-sort="162">162</td>
+                <td data-sort="75">75</td>
+                <td data-sort="0819">August 19</td>
+            </tr>
+            <tr>
+                <td data-sort="Claude">Claude</td>
+                <td data-sort="180">180</td>
+                <td data-sort="95">95</td>
+                <td data-sort="1215">December 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Snow">Snow</td>
+                <td data-sort="218">218</td>
+                <td data-sort="171">171</td>
+                <td data-sort="0105">January 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Macan">Macan</td>
+                <td data-sort="215">215</td>
+                <td data-sort="190">190</td>
+                <td data-sort="0616">June 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Oniwaka">Oniwaka</td>
+                <td data-sort="190">190</td>
+                <td data-sort="133">133</td>
+                <td data-sort="0303">March 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Bathym">Bathym</td>
+                <td data-sort="185">185</td>
+                <td data-sort="99">99</td>
+                <td data-sort="0108">January 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Pollux">Pollux</td>
+                <td data-sort="176">176</td>
+                <td data-sort="90">90</td>
+                <td data-sort="0606">June 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Horkeu Kamui">Horkeu Kamui</td>
+                <td data-sort="209">209</td>
+                <td data-sort="138">138</td>
+                <td data-sort="1116">November 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Ikutoshi">Ikutoshi</td>
+                <td data-sort="147">147 / 176</td>
+                <td data-sort="46">46 / 88</td>
+                <td data-sort="0621">June 21</td>
+            </tr>
+            <tr>
+                <td data-sort="Taurus Mask">Taurus Mask</td>
+                <td data-sort="177">177</td>
+                <td data-sort="97">97</td>
+                <td data-sort="0505">May 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Garmr">Garmr</td>
+                <td data-sort="161">161</td>
+                <td data-sort="63">63</td>
+                <td data-sort="0320">March 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Nomad">Nomad</td>
+                <td data-sort="181">181</td>
+                <td data-sort="85">85</td>
+                <td data-sort="0930">September 30</td>
+            </tr>
+            <tr>
+                <td data-sort="Andvari">Andvari</td>
+                <td data-sort="148">148</td>
+                <td data-sort="84">84</td>
+                <td data-sort="0922">September 22</td>
+            </tr>
+            <tr>
+                <td data-sort="Yule">Yule</td>
+                <td data-sort="167">167</td>
+                <td data-sort="72">72</td>
+                <td data-sort="1110">November 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Ded">Ded</td>
+                <td data-sort="191">191</td>
+                <td data-sort="130">130</td>
+                <td data-sort="1206">December 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Jiraiya">Jiraiya</td>
+                <td data-sort="176">176</td>
+                <td data-sort="84">84</td>
+                <td data-sort="0327">March 27</td>
+            </tr>
+            <tr>
+                <td data-sort="Sitri">Sitri</td>
+                <td data-sort="151">151</td>
+                <td data-sort="48">48</td>
+                <td data-sort="0102">January 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Shinya">Shinya</td>
+                <td data-sort="171">171</td>
+                <td data-sort="73">73</td>
+                <td data-sort="0219">February 19</td>
+            </tr>
+            <tr>
+                <td data-sort="Kalki">Kalki</td>
+                <td data-sort="184">184</td>
+                <td data-sort="136">136</td>
+                <td data-sort="0123">January 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Taromaiti">Taromaiti</td>
+                <td data-sort="172">172</td>
+                <td data-sort="67">67</td>
+                <td data-sort="0715">July 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Ryota">Ryota</td>
+                <td data-sort="165">165</td>
+                <td data-sort="106">106</td>
+                <td data-sort="0408">April 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Zabaniyya">Zabaniyya</td>
+                <td data-sort="180">180</td>
+                <td data-sort="108">108</td>
+                <td data-sort="0109">January 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Maria">Maria</td>
+                <td data-sort="155">155</td>
+                <td data-sort="47">47</td>
+                <td data-sort="1224">December 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Azazel">Azazel</td>
+                <td data-sort="180">180</td>
+                <td data-sort="110">110</td>
+                <td data-sort="0710">July 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Choji">Choji</td>
+                <td data-sort="164">164</td>
+                <td data-sort="107">107</td>
+                <td data-sort="1022">October 22</td>
+            </tr>
+            <tr>
+                <td data-sort="Gabriel">Gabriel</td>
+                <td data-sort="157">157</td>
+                <td data-sort="-1">Not disclosed (Agency NG)</td>
+                <td data-sort="0325">March 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Hati">Hati</td>
+                <td data-sort="177">177</td>
+                <td data-sort="72">72</td>
+                <td data-sort="0202">February 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Nyarlathotep">Nyarlathotep</td>
+                <td data-sort="170">170?</td>
+                <td data-sort="70">70?</td>
+                <td data-sort="0229">February 29</td>
+            </tr>
+            <tr>
+                <td data-sort="Arsalan">Arsalan</td>
+                <td data-sort="191">191</td>
+                <td data-sort="145">145</td>
+                <td data-sort="0901">September 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Hakumen">Hakumen</td>
+                <td data-sort="161">161</td>
+                <td data-sort="55">55 (excluding tail)</td>
+                <td data-sort="0910">September 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Gandharva">Gandharva</td>
+                <td data-sort="193">193</td>
+                <td data-sort="110">110</td>
+                <td data-sort="0408">April 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Ifrit">Ifrit</td>
+                <td data-sort="190">190</td>
+                <td data-sort="116">116</td>
+                <td data-sort="0711">July 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Kotaro">Kotaro</td>
+                <td data-sort="134">134</td>
+                <td data-sort="60">60</td>
+                <td data-sort="0216">February 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Hanuman">Hanuman</td>
+                <td data-sort="150">150</td>
+                <td data-sort="59">59</td>
+                <td data-sort="0702">July 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Tsathoggua">Tsathoggua</td>
+                <td data-sort="230">230</td>
+                <td data-sort="286">286</td>
+                <td data-sort="0616">June 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Zao">Zao</td>
+                <td data-sort="205">205</td>
+                <td data-sort="172">172</td>
+                <td data-sort="0505">May 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Ashigara">Ashigara</td>
+                <td data-sort="220">220</td>
+                <td data-sort="272">272</td>
+                <td data-sort="0111">January 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Barguest">Barguest</td>
+                <td data-sort="188">188</td>
+                <td data-sort="132">132</td>
+                <td data-sort="0413">April 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Shuten">Shuten</td>
+                <td data-sort="186">186</td>
+                <td data-sort="96">96</td>
+                <td data-sort="0123">January 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Ibaraki">Ibaraki</td>
+                <td data-sort="172">172 / 172</td>
+                <td data-sort="64">64 / Secret ♡</td>
+                <td data-sort="0106">January 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Hogen">Hogen</td>
+                <td data-sort="177">177</td>
+                <td data-sort="91">91</td>
+                <td data-sort="0915">September 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Melusine">Melusine</td>
+                <td data-sort="166">166</td>
+                <td data-sort="56">56</td>
+                <td data-sort="0213">February 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Chernobog">Chernobog</td>
+                <td data-sort="228">228</td>
+                <td data-sort="256">256</td>
+                <td data-sort="0328">March 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Benten">Benten</td>
+                <td data-sort="152">152</td>
+                <td data-sort="49">49 (51)</td>
+                <td data-sort="0415">April 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Eita">Eita</td>
+                <td data-sort="146">146</td>
+                <td data-sort="82">82</td>
+                <td data-sort="0102">January 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Ganglie">Ganglie</td>
+                <td data-sort="176">176</td>
+                <td data-sort="142">142</td>
+                <td data-sort="0503">May 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Makara">Makara</td>
+                <td data-sort="203">203</td>
+                <td data-sort="190">190</td>
+                <td data-sort="0703">July 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Ahab">Ahab</td>
+                <td data-sort="190">190</td>
+                <td data-sort="163">163</td>
+                <td data-sort="0928">September 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Typhon">Typhon</td>
+                <td data-sort="249">249 (Usually)</td>
+                <td data-sort="303">303 (Usually)</td>
+                <td data-sort="0708">July 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Jinn">Jinn</td>
+                <td data-sort="182">182</td>
+                <td data-sort="148">148 (When materialized)</td>
+                <td data-sort="0601">June 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Toji">Toji</td>
+                <td data-sort="174">174</td>
+                <td data-sort="76">76</td>
+                <td data-sort="0308">March 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Ophion (Young)">Ophion (Young)</td>
+                <td data-sort="200">200 *Dragon body size variable</td>
+                <td data-sort="195">195 *Dragon body size variable</td>
+                <td data-sort="0914">September 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Ophion (Old)">Ophion (Old)</td>
+                <td data-sort="210">210 *Dragon body size variable</td>
+                <td data-sort="175">175 *Dragon body size variable</td>
+                <td data-sort="0914">September 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Licht">Licht</td>
+                <td data-sort="166">166</td>
+                <td data-sort="96">96</td>
+                <td data-sort="0807">August 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Xolotl">Xolotl</td>
+                <td data-sort="192">192</td>
+                <td data-sort="120">120</td>
+                <td data-sort="0116">January 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Tetsuya">Tetsuya</td>
+                <td data-sort="179">179</td>
+                <td data-sort="93">93</td>
+                <td data-sort="0804">August 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Tadatomo">Tadatomo</td>
+                <td data-sort="163">163</td>
+                <td data-sort="63">63</td>
+                <td data-sort="1024">October 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Lucifuge">Lucifuge</td>
+                <td data-sort="186">186</td>
+                <td data-sort="109">109</td>
+                <td data-sort="0401">April 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Tetsuox">Tetsuox</td>
+                <td data-sort="184">184</td>
+                <td data-sort="137">137</td>
+                <td data-sort="0202">February 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Suzuka">Suzuka</td>
+                <td data-sort="161">161</td>
+                <td data-sort="52">52</td>
+                <td data-sort="0306">March 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Jambavan">Jambavan</td>
+                <td data-sort="176">176</td>
+                <td data-sort="131">131</td>
+                <td data-sort="0201">February 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Shino">Shino</td>
+                <td data-sort="162">162</td>
+                <td data-sort="75">75</td>
+                <td data-sort="0808">August 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Babalon">Babalon</td>
+                <td data-sort="160">160</td>
+                <td data-sort="47">47</td>
+                <td data-sort="1007">October 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Azathoth">Azathoth</td>
+                <td data-sort="144">144</td>
+                <td data-sort="44">44</td>
+                <td data-sort="0609">June 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Surtr">Surtr</td>
+                <td data-sort="223">223</td>
+                <td data-sort="182">182 (excluding armor)</td>
+                <td data-sort="0408">April 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Musashi">Musashi</td>
+                <td data-sort="152">152</td>
+                <td data-sort="50">50</td>
+                <td data-sort="0613">June 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Shuichi">Shuichi</td>
+                <td data-sort="177">177</td>
+                <td data-sort="83">83</td>
+                <td data-sort="0612">June 12</td>
+            </tr>
+            <tr>
+                <td data-sort="Volos">Volos</td>
+                <td data-sort="189">189</td>
+                <td data-sort="129">129</td>
+                <td data-sort="1004">October 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Alice">Alice</td>
+                <td data-sort="138">138</td>
+                <td data-sort="33">33</td>
+                <td data-sort="1126">November 26</td>
+            </tr>
+            <tr>
+                <td data-sort="Cu Sith">Cu Sith</td>
+                <td data-sort="169">169</td>
+                <td data-sort="122">122</td>
+                <td data-sort="1101">November 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Kijimuna">Kijimuna</td>
+                <td data-sort="135">135</td>
+                <td data-sort="64">64</td>
+                <td data-sort="0810">August 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Tangaroa">Tangaroa</td>
+                <td data-sort="184">184</td>
+                <td data-sort="105">105</td>
+                <td data-sort="0408">April 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Kurogane">Kurogane</td>
+                <td data-sort="182">182</td>
+                <td data-sort="110">110 (including prosthetic weight)</td>
+                <td data-sort="0204">February 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Triton">Triton</td>
+                <td data-sort="182">182</td>
+                <td data-sort="116">116</td>
+                <td data-sort="0720">July 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Asterius">Asterius</td>
+                <td data-sort="223">223</td>
+                <td data-sort="206">206</td>
+                <td data-sort="0907">September 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Robinson">Robinson</td>
+                <td data-sort="162">162</td>
+                <td data-sort="66">66</td>
+                <td data-sort="0425">April 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Krampus">Krampus</td>
+                <td data-sort="216">216</td>
+                <td data-sort="157">157</td>
+                <td data-sort="1205">December 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Agyo">Agyo</td>
+                <td data-sort="120">120</td>
+                <td data-sort="39">39</td>
+                <td data-sort="0101">January 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Arc">Arc</td>
+                <td data-sort="164">164</td>
+                <td data-sort="55">55</td>
+                <td data-sort="0106">January 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Algernon">Algernon</td>
+                <td data-sort="177">177</td>
+                <td data-sort="85">85 (excluding mechanical parts)</td>
+                <td data-sort="1121">November 21</td>
+            </tr>
+            <tr>
+                <td data-sort="R-19">R-19</td>
+                <td data-sort="161">161</td>
+                <td data-sort="58">58 (biological parts only)</td>
+                <td data-sort="0625">June 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Ose (Small)">Ose (Small)</td>
+                <td data-sort="145">145</td>
+                <td data-sort="39">39</td>
+                <td data-sort="0507">May 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Ose (Adult)">Ose (Adult)</td>
+                <td data-sort="190">190</td>
+                <td data-sort="89">89</td>
+                <td data-sort="0507">May 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Duo">Duo</td>
+                <td data-sort="143">143</td>
+                <td data-sort="36">36</td>
+                <td data-sort="0402">April 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Kirito">Kirito</td>
+                <td data-sort="152">152</td>
+                <td data-sort="63">63</td>
+                <td data-sort="0403">April 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Christine">Christine</td>
+                <td data-sort="167">167</td>
+                <td data-sort="53">53</td>
+                <td data-sort="0923">September 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Marchosias">Marchosias</td>
+                <td data-sort="193">193</td>
+                <td data-sort="121">121</td>
+                <td data-sort="0305">March 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Mineaki">Mineaki</td>
+                <td data-sort="168">168</td>
+                <td data-sort="102">102</td>
+                <td data-sort="0903">September 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Aizen">Aizen</td>
+                <td data-sort="185">185</td>
+                <td data-sort="102">102</td>
+                <td data-sort="0107">January 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Durga">Durga</td>
+                <td data-sort="161">161</td>
+                <td data-sort="58">58</td>
+                <td data-sort="1018">October 18</td>
+            </tr>
+            <tr>
+                <td data-sort="Gunzo">Gunzo</td>
+                <td data-sort="176">176</td>
+                <td data-sort="98">98</td>
+                <td data-sort="0824">August 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Kyuma">Kyuma</td>
+                <td data-sort="168">168</td>
+                <td data-sort="71">71</td>
+                <td data-sort="0809">August 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Kagutsuchi">Kagutsuchi</td>
+                <td data-sort="145">145</td>
+                <td data-sort="53">53</td>
+                <td data-sort="1010">October 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Wakan Tanka">Wakan Tanka</td>
+                <td data-sort="183">183</td>
+                <td data-sort="107">107</td>
+                <td data-sort="1212">December 12</td>
+            </tr>
+            <tr>
+                <td data-sort="Gyobu">Gyobu</td>
+                <td data-sort="182">182</td>
+                <td data-sort="133">133</td>
+                <td data-sort="0808">August 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Nobuharu">Nobuharu</td>
+                <td data-sort="158">158</td>
+                <td data-sort="60">60</td>
+                <td data-sort="0601">June 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Tajikarao">Tajikarao</td>
+                <td data-sort="181">181</td>
+                <td data-sort="115">115</td>
+                <td data-sort="0210">February 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Gyumao">Gyumao</td>
+                <td data-sort="202">202</td>
+                <td data-sort="167">167</td>
+                <td data-sort="0408">April 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Seth">Seth</td>
+                <td data-sort="168">168</td>
+                <td data-sort="58">58</td>
+                <td data-sort="0716">July 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Thunderbird">Thunderbird</td>
+                <td data-sort="183">183</td>
+                <td data-sort="103">103</td>
+                <td data-sort="0930">September 30</td>
+            </tr>
+            <tr>
+                <td data-sort="Amatsumara">Amatsumara</td>
+                <td data-sort="178">178</td>
+                <td data-sort="125">125</td>
+                <td data-sort="0501">May 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Aegir">Aegir</td>
+                <td data-sort="210">210</td>
+                <td data-sort="168">168</td>
+                <td data-sort="0807">August 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Fenrir">Fenrir</td>
+                <td data-sort="174">174</td>
+                <td data-sort="110">110</td>
+                <td data-sort="0301">March 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Ebisu">Ebisu</td>
+                <td data-sort="164">164</td>
+                <td data-sort="102">102</td>
+                <td data-sort="0105">January 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Tanngrisnir">Tanngrisnir</td>
+                <td data-sort="178">178</td>
+                <td data-sort="105">105</td>
+                <td data-sort="1213">December 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Gullinbursti">Gullinbursti</td>
+                <td data-sort="177">177</td>
+                <td data-sort="97">97</td>
+                <td data-sort="0101">January 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Motosumi">Motosumi</td>
+                <td data-sort="170">170</td>
+                <td data-sort="95">95</td>
+                <td data-sort="1102">November 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Takemaru">Takemaru</td>
+                <td data-sort="180">180</td>
+                <td data-sort="111">111</td>
+                <td data-sort="1012">October 12</td>
+            </tr>
+            <tr>
+                <td data-sort="Behemoth">Behemoth</td>
+                <td data-sort="251">251</td>
+                <td data-sort="340">340</td>
+                <td data-sort="0507">May 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Ziz">Ziz</td>
+                <td data-sort="263">263</td>
+                <td data-sort="112">112</td>
+                <td data-sort="0507">May 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Kenta">Kenta</td>
+                <td data-sort="138">138</td>
+                <td data-sort="68">68</td>
+                <td data-sort="1016">October 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Breke">Breke</td>
+                <td data-sort="183">183</td>
+                <td data-sort="88">88</td>
+                <td data-sort="0601">June 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Tsukuyomi">Tsukuyomi</td>
+                <td data-sort="184">184</td>
+                <td data-sort="89">89</td>
+                <td data-sort="0913">September 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Avarga">Avarga</td>
+                <td data-sort="178">178</td>
+                <td data-sort="126">126</td>
+                <td data-sort="0711">July 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Korpokkur">Korpokkur</td>
+                <td data-sort="130">130</td>
+                <td data-sort="60">60</td>
+                <td data-sort="1230">December 30</td>
+            </tr>
+            <tr>
+                <td data-sort="Oz">Oz</td>
+                <td data-sort="172">172</td>
+                <td data-sort="110">110</td>
+                <td data-sort="0517">May 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Alp">Alp</td>
+                <td data-sort="168">168</td>
+                <td data-sort="135">135</td>
+                <td data-sort="0610">June 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Kuniyoshi">Kuniyoshi</td>
+                <td data-sort="170">170</td>
+                <td data-sort="94">94</td>
+                <td data-sort="1115">November 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Leib">Leib</td>
+                <td data-sort="181">181</td>
+                <td data-sort="128">128</td>
+                <td data-sort="0206">February 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Furufumi">Furufumi</td>
+                <td data-sort="169">169</td>
+                <td data-sort="105">105</td>
+                <td data-sort="1214">December 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Talos / Hephaestus">Talos / Hephaestus</td>
+                <td data-sort="195">195</td>
+                <td data-sort="121">121 (including prosthetic weight)</td>
+                <td data-sort="1209">December 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Hombre Tigre">Hombre Tigre</td>
+                <td data-sort="184">184</td>
+                <td data-sort="152">152</td>
+                <td data-sort="0721">July 21</td>
+            </tr>
+            <tr>
+                <td data-sort="Arachne">Arachne</td>
+                <td data-sort="160">160</td>
+                <td data-sort="48">48 (excluding legs on back)</td>
+                <td data-sort="0707">July 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Goemon">Goemon</td>
+                <td data-sort="169">169</td>
+                <td data-sort="125">125</td>
+                <td data-sort="1008">October 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Licho">Licho</td>
+                <td data-sort="174">174</td>
+                <td data-sort="125">125</td>
+                <td data-sort="0920">September 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Sanat Kumara">Sanat Kumara</td>
+                <td data-sort="177">177</td>
+                <td data-sort="110">110</td>
+                <td data-sort="1209">December 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Nezha">Nezha</td>
+                <td data-sort="151">151</td>
+                <td data-sort="51">51</td>
+                <td data-sort="0916">September 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Temujin">Temujin</td>
+                <td data-sort="187">187</td>
+                <td data-sort="94">94</td>
+                <td data-sort="0531">May 31</td>
+            </tr>
+            <tr>
+                <td data-sort="Astaroth">Astaroth</td>
+                <td data-sort="164">164</td>
+                <td data-sort="54">54</td>
+                <td data-sort="0209">February 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Astarte">Astarte</td>
+                <td data-sort="159">159</td>
+                <td data-sort="50">50</td>
+                <td data-sort="0209">February 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Dagon">Dagon</td>
+                <td data-sort="182">182</td>
+                <td data-sort="116">116</td>
+                <td data-sort="0718">July 18</td>
+            </tr>
+            <tr>
+                <td data-sort="Tomte">Tomte</td>
+                <td data-sort="180">180</td>
+                <td data-sort="106">106</td>
+                <td data-sort="1213">December 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Tezcatlipoca">Tezcatlipoca</td>
+                <td data-sort="196">196 (50 when plush)</td>
+                <td data-sort="118">118 (16 when plush)</td>
+                <td data-sort="0503">May 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Shennong">Shennong</td>
+                <td data-sort="177">177</td>
+                <td data-sort="103">103</td>
+                <td data-sort="0302">March 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Yasuyori">Yasuyori</td>
+                <td data-sort="201">201</td>
+                <td data-sort="165">165</td>
+                <td data-sort="1120">November 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Jacob">Jacob</td>
+                <td data-sort="183">183</td>
+                <td data-sort="115">115</td>
+                <td data-sort="0725">July 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Echo">Echo</td>
+                <td data-sort="154">154</td>
+                <td data-sort="43">43</td>
+                <td data-sort="0322">March 22</td>
+            </tr>
+            <tr>
+                <td data-sort="Heracles">Heracles</td>
+                <td data-sort="188">188</td>
+                <td data-sort="121">121</td>
+                <td data-sort="0623">June 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Horus">Horus</td>
+                <td data-sort="164">164</td>
+                <td data-sort="79">79</td>
+                <td data-sort="0719">July 19</td>
+            </tr>
+            <tr>
+                <td data-sort="Cthugha">Cthugha</td>
+                <td data-sort="205">205</td>
+                <td data-sort="180">180</td>
+                <td data-sort="0303">March 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Bael">Bael</td>
+                <td data-sort="168">168</td>
+                <td data-sort="58">58</td>
+                <td data-sort="1111">November 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Leannan Sidhe">Leannan Sidhe</td>
+                <td data-sort="158">158</td>
+                <td data-sort="51">51</td>
+                <td data-sort="0213">February 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Tanetomo">Tanetomo</td>
+                <td data-sort="143">143</td>
+                <td data-sort="42">42</td>
+                <td data-sort="0515">May 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Daikoku">Daikoku</td>
+                <td data-sort="187">187</td>
+                <td data-sort="118">118</td>
+                <td data-sort="1011">October 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Teda">Teda</td>
+                <td data-sort="158">158</td>
+                <td data-sort="67">67</td>
+                <td data-sort="1222">December 22</td>
+            </tr>
+            <tr>
+                <td data-sort="Balor">Balor</td>
+                <td data-sort="212">212</td>
+                <td data-sort="185">185</td>
+                <td data-sort="0801">August 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Hero">Hero (F-Kare)</td>
+                <td data-sort="171">171</td>
+                <td data-sort="72">72</td>
+                <td data-sort="9999">Unknown</td>
+            </tr>
+            <tr>
+                <td data-sort="Orgus">Orgus</td>
+                <td data-sort="197">197</td>
+                <td data-sort="140">140</td>
+                <td data-sort="0604">June 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Sol">Sol</td>
+                <td data-sort="179">179</td>
+                <td data-sort="117">117</td>
+                <td data-sort="0604">June 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Necros & Bacchus">Necros & Bacchus</td>
+                <td data-sort="196">196</td>
+                <td data-sort="133">133</td>
+                <td data-sort="0604">June 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Kimun Kamui">Kimun Kamui</td>
+                <td data-sort="223">223</td>
+                <td data-sort="275">275</td>
+                <td data-sort="0323">March 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Yamasachihiko">Yamasachihiko</td>
+                <td data-sort="176">176</td>
+                <td data-sort="86">86</td>
+                <td data-sort="0605">June 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Otohime">Otohime</td>
+                <td data-sort="160">160</td>
+                <td data-sort="46">46</td>
+                <td data-sort="0707">July 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Cait Sith">Cait Sith</td>
+                <td data-sort="85">85</td>
+                <td data-sort="25">25</td>
+                <td data-sort="0222">February 22</td>
+            </tr>
+            <tr>
+                <td data-sort="Tvastar">Tvastar</td>
+                <td data-sort="174">174</td>
+                <td data-sort="125">125</td>
+                <td data-sort="0414">April 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Shiva">Shiva</td>
+                <td data-sort="199">199</td>
+                <td data-sort="139">139 (including helmet)</td>
+                <td data-sort="0214">February 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Marduk">Marduk</td>
+                <td data-sort="174">174</td>
+                <td data-sort="91">91</td>
+                <td data-sort="0401">April 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Bertro">Bertro</td>
+                <td data-sort="153">153 (no vehicle, standing)</td>
+                <td data-sort="67">67</td>
+                <td data-sort="0508">May 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Ellie">Ellie</td>
+                <td data-sort="156">156</td>
+                <td data-sort="45">45</td>
+                <td data-sort="0807">August 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Itzamna">Itzamna</td>
+                <td data-sort="198">198</td>
+                <td data-sort="160">160</td>
+                <td data-sort="0811">August 11</td>
+            </tr>
+            <tr>
+                <td data-sort="MacRoich">MacRoich</td>
+                <td data-sort="185">185</td>
+                <td data-sort="108">108</td>
+                <td data-sort="0707">July 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Yoritomo">Yoritomo</td>
+                <td data-sort="173">173 (including shoes)</td>
+                <td data-sort="79">79</td>
+                <td data-sort="0209">February 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Mephistopheles">Mephistopheles</td>
+                <td data-sort="171">171</td>
+                <td data-sort="78">78</td>
+                <td data-sort="0319">March 19</td>
+            </tr>
+            <tr>
+                <td data-sort="Babe Bunyan">Babe Bunyan</td>
+                <td data-sort="143">143</td>
+                <td data-sort="75">75</td>
+                <td data-sort="0324">March 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Volkh Vseslav">Volkh Vseslav</td>
+                <td data-sort="210">210</td>
+                <td data-sort="139">139</td>
+                <td data-sort="0414">April 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Masanori">Masanori</td>
+                <td data-sort="184">184</td>
+                <td data-sort="78">78</td>
+                <td data-sort="0909">September 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Akiha Gongen">Akiha Gongen</td>
+                <td data-sort="183">183</td>
+                <td data-sort="110">110</td>
+                <td data-sort="1015">October 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Kresnik">Kresnik</td>
+                <td data-sort="183">183</td>
+                <td data-sort="126">126</td>
+                <td data-sort="0513">May 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Tindalos">Tindalos</td>
+                <td data-sort="181">181 (official profile)</td>
+                <td data-sort="112 (official profile)">112</td>
+                <td data-sort="0103">January 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Nodens">Nodens</td>
+                <td data-sort="190">190</td>
+                <td data-sort="100">100</td>
+                <td data-sort="1109">November 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Fuxi">Fuxi</td>
+                <td data-sort="192">192 (variable)</td>
+                <td data-sort="128">128 (variable)</td>
+                <td data-sort="0318">March 18</td>
+            </tr>
+            <tr>
+                <td data-sort="Sandayu">Sandayu</td>
+                <td data-sort="175">175</td>
+                <td data-sort="86">86</td>
+                <td data-sort="0418">April 18</td>
+            </tr>
+            <tr>
+                <td data-sort="Catoblepas">Catoblepas</td>
+                <td data-sort="190">190</td>
+                <td data-sort="128">128</td>
+                <td data-sort="1025">October 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Smokey God">Smokey God</td>
+                <td data-sort="185">185 (human form)</td>
+                <td data-sort="94">94 (human form)</td>
+                <td data-sort="0215">February 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Oguchi Magami">Oguchi Magami</td>
+                <td data-sort="183">183</td>
+                <td data-sort="123">123</td>
+                <td data-sort="0510">May 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Zhurong">Zhurong</td>
+                <td data-sort="141">141</td>
+                <td data-sort="65">65</td>
+                <td data-sort="0213">February 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Sarutahiko">Sarutahiko</td>
+                <td data-sort="170">170</td>
+                <td data-sort="112">112</td>
+                <td data-sort="1010">October 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Hotei">Hotei</td>
+                <td data-sort="171">171</td>
+                <td data-sort="124">124</td>
+                <td data-sort="0328">March 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Wakan Tanka ∞">Wakan Tanka ∞</td>
+                <td data-sort="183">183</td>
+                <td data-sort="107">107</td>
+                <td data-sort="1212">December 12</td>
+            </tr>
+            <tr>
+                <td data-sort="Tangaroa ∞">Tangaroa ∞</td>
+                <td data-sort="184">184</td>
+                <td data-sort="105">105</td>
+                <td data-sort="0408">April 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Hermes">Hermes</td>
+                <td data-sort="178">178</td>
+                <td data-sort="83">83</td>
+                <td data-sort="0515">May 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Boogeyman">Boogeyman</td>
+                <td data-sort="185">185</td>
+                <td data-sort="121">121</td>
+                <td data-sort="0301">March 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Barong">Barong</td>
+                <td data-sort="187">187</td>
+                <td data-sort="134">134</td>
+                <td data-sort="1120">November 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Enigma">Enigma</td>
+                <td data-sort="179">179 (with individual variation)</td>
+                <td data-sort="99">99 (with individual variation)</td>
+                <td data-sort="1027">October 27</td>
+            </tr>
+            <tr>
+                <td data-sort="Israfil">Israfil</td>
+                <td data-sort="180">180</td>
+                <td data-sort="108">108</td>
+                <td data-sort="0309">March 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Tuaring">Tuaring</td>
+                <td data-sort="158">158</td>
+                <td data-sort="54">54</td>
+                <td data-sort="0607">June 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Hecate">Hecate</td>
+                <td data-sort="171">171</td>
+                <td data-sort="95">95</td>
+                <td data-sort="0310">March 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Perun">Perun</td>
+                <td data-sort="191">191</td>
+                <td data-sort="140">140</td>
+                <td data-sort="0720">July 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Takeminakata">Takeminakata</td>
+                <td data-sort="173">173</td>
+                <td data-sort="136">136</td>
+                <td data-sort="0915">September 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Yoshito">Yoshito</td>
+                <td data-sort="162">162</td>
+                <td data-sort="57">57</td>
+                <td data-sort="1201">December 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Ulaanbaatar">Ulaanbaatar</td>
+                <td data-sort="184">184</td>
+                <td data-sort="119">119</td>
+                <td data-sort="1126">November 26</td>
+            </tr>
+            <tr>
+                <td data-sort="Taishakuten">Taishakuten</td>
+                <td data-sort="198">198</td>
+                <td data-sort="138">138</td>
+                <td data-sort="0407">April 7</td>
+            </tr>
+            <tr>
+                <td data-sort="∀Isaac">∀Isaac</td>
+                <td data-sort="155">155</td>
+                <td data-sort="49">49</td>
+                <td data-sort="0406">April 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Gorozaemon">Gorozaemon</td>
+                <td data-sort="164">164</td>
+                <td data-sort="54">54</td>
+                <td data-sort="0730">July 30</td>
+            </tr>
+            <tr>
+                <td data-sort="Jormungandr">Jormungandr</td>
+                <td data-sort="194">194 (Normal)</td>
+                <td data-sort="154">154 (Normal)</td>
+                <td data-sort="0528">May 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Vapula">Vapula</td>
+                <td data-sort="160">160</td>
+                <td data-sort="103">103</td>
+                <td data-sort="0610">June 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Ixbalanque">Ixbalanque</td>
+                <td data-sort="191">191</td>
+                <td data-sort="83">83</td>
+                <td data-sort="0525">May 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Sphinx">Sphinx</td>
+                <td data-sort="142">142</td>
+                <td data-sort="36">36</td>
+                <td data-sort="1125">November 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Bigfoot">Bigfoot</td>
+                <td data-sort="200">200</td>
+                <td data-sort="200">200 - 350</td>
+                <td data-sort="1020">October 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Simurgh">Simurgh</td>
+                <td data-sort="192">192</td>
+                <td data-sort="119">119</td>
+                <td data-sort="0308">March 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Inaba">Inaba</td>
+                <td data-sort="120">120</td>
+                <td data-sort="35">35</td>
+                <td data-sort="0916">September 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Girimekra">Girimekra</td>
+                <td data-sort="235">235</td>
+                <td data-sort="287">287</td>
+                <td data-sort="0812">August 12</td>
+            </tr>
+            <tr>
+                <td data-sort="Hastur">Hastur</td>
+                <td data-sort="200">200</td>
+                <td data-sort="159">159</td>
+                <td data-sort="0124">January 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Q'ursha">Q'ursha</td>
+                <td data-sort="198">198</td>
+                <td data-sort="113">113</td>
+                <td data-sort="1221">December 21</td>
+            </tr>
+            <tr>
+                <td data-sort="Pazuzu">Pazuzu</td>
+                <td data-sort="179">179</td>
+                <td data-sort="98">98</td>
+                <td data-sort="0814">August 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Nobumichi">Nobumichi</td>
+                <td data-sort="193">193</td>
+                <td data-sort="126">126</td>
+                <td data-sort="1020">October 20</td>
+            </tr>
+            <tr>
+                <td data-sort="Amduscias">Amduscias</td>
+                <td data-sort="190">190</td>
+                <td data-sort="112">112</td>
+                <td data-sort="0607">June 7</td>
+            </tr>
+            <tr>
+                <td data-sort="Oscar">Oscar</td>
+                <td data-sort="188">188</td>
+                <td data-sort="108">108</td>
+                <td data-sort="0516">May 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Gurangatch">Gurangatch</td>
+                <td data-sort="188">188</td>
+                <td data-sort="145">145</td>
+                <td data-sort="0617">June 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Yuma">Yuma</td>
+                <td data-sort="173">173</td>
+                <td data-sort="89">89</td>
+                <td data-sort="1223">December 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Quantum">Quantum</td>
+                <td data-sort="137">137</td>
+                <td data-sort="36">36</td>
+                <td data-sort="1214">December 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Ahura Mazda">Ahura Mazda</td>
+                <td data-sort="194">194</td>
+                <td data-sort="128">128</td>
+                <td data-sort="0717">July 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Loki">Loki</td>
+                <td data-sort="193">193</td>
+                <td data-sort="131">131</td>
+                <td data-sort="1013">October 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Tianzun">Tianzun</td>
+                <td data-sort="184">184</td>
+                <td data-sort="130">130</td>
+                <td data-sort="0215">February 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Beowulf">Beowulf</td>
+                <td data-sort="165">165</td>
+                <td data-sort="100">100</td>
+                <td data-sort="0902">September 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Cipactli">Cipactli</td>
+                <td data-sort="249">249</td>
+                <td data-sort="1153">1153</td>
+                <td data-sort="0108">January 8</td>
+            </tr>
+            <tr>
+                <td data-sort="Reprobus">Reprobus</td>
+                <td data-sort="203">203</td>
+                <td data-sort="155">155</td>
+                <td data-sort="0725">July 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Gordon">Gordon</td>
+                <td data-sort="179">179</td>
+                <td data-sort="115">115</td>
+                <td data-sort="1224">December 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Fafnir">Fafnir</td>
+                <td data-sort="177">177 (human form)</td>
+                <td data-sort="89">89 (human form)</td>
+                <td data-sort="0816">August 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Klaus">Klaus</td>
+                <td data-sort="172">172</td>
+                <td data-sort="124">124</td>
+                <td data-sort="1206">December 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Shamash">Shamash</td>
+                <td data-sort="187">187</td>
+                <td data-sort="95">95</td>
+                <td data-sort="0924">September 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Masashi">Masashi</td>
+                <td data-sort="123">123</td>
+                <td data-sort="42">42</td>
+                <td data-sort="1228">December 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Otter">Otter</td>
+                <td data-sort="143">143</td>
+                <td data-sort="39">39</td>
+                <td data-sort="0302">March 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Qinglong">Qinglong</td>
+                <td data-sort="202">202</td>
+                <td data-sort="210">210</td>
+                <td data-sort="1127">November 27</td>
+            </tr>
+            <tr>
+                <td data-sort="Amanojaku">Amanojaku</td>
+                <td data-sort="145">145</td>
+                <td data-sort="88">88</td>
+                <td data-sort="0417">April 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Hippolytus">Hippolytus</td>
+                <td data-sort="179">179</td>
+                <td data-sort="122">122</td>
+                <td data-sort="0813">August 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Hei Long Yi Quan">Hei Long Yi Quan</td>
+                <td data-sort="180">180</td>
+                <td data-sort="120">120</td>
+                <td data-sort="0823">August 23</td>
+            </tr>
+            <tr>
+                <td data-sort="Prometheus">Prometheus</td>
+                <td data-sort="185">185</td>
+                <td data-sort="109">109</td>
+                <td data-sort="1015">October 15</td>
+            </tr>
+            <tr>
+                <td data-sort="Belphegor">Belphegor</td>
+                <td data-sort="161">161</td>
+                <td data-sort="106">106</td>
+                <td data-sort="1221">December 21</td>
+            </tr>
+            <tr>
+                <td data-sort="Ame-no-Uzume">Ame-no-Uzume</td>
+                <td data-sort="168">168</td>
+                <td data-sort="53">53</td>
+                <td data-sort="0817">August 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Amaterasu">Amaterasu</td>
+                <td data-sort="163">163</td>
+                <td data-sort="49">49</td>
+                <td data-sort="1130">November 30</td>
+            </tr>
+            <tr>
+                <td data-sort="Willie Wildcat">Willie Wildcat</td>
+                <td data-sort="199">199</td>
+                <td data-sort="180">180</td>
+                <td data-sort="1105">November 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Raven Arthur">Raven Arthur</td>
+                <td data-sort="175">175</td>
+                <td data-sort="104">104</td>
+                <td data-sort="0906">September 6</td>
+            </tr>
+            <tr>
+                <td data-sort="Tu'er Shen">Tu'er Shen</td>
+                <td data-sort="170">170</td>
+                <td data-sort="70">70</td>
+                <td data-sort="0628">June 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Michael">Michael</td>
+                <td data-sort="145">145</td>
+                <td data-sort="47">47</td>
+                <td data-sort="0929">September 29</td>
+            </tr>
+            <tr>
+                <td data-sort="Baphomet">Baphomet</td>
+                <td data-sort="174">174</td>
+                <td data-sort="74">74</td>
+                <td data-sort="0729">July 29</td>
+            </tr>
+            <tr>
+                <td data-sort="Kokopelli">Kokopelli</td>
+                <td data-sort="201">201</td>
+                <td data-sort="135">135</td>
+                <td data-sort="0626">June 26</td>
+            </tr>
+            <tr>
+                <td data-sort="Sanzo">Sanzo</td>
+                <td data-sort="176">176</td>
+                <td data-sort="101">101</td>
+                <td data-sort="0205">February 5</td>
+            </tr>
+            <tr>
+                <td data-sort="Y'golonac">Y'golonac</td>
+                <td data-sort="212">212</td>
+                <td data-sort="252">252</td>
+                <td data-sort="0104">January 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Himavat">Himavat</td>
+                <td data-sort="188">188</td>
+                <td data-sort="97">97</td>
+                <td data-sort="0529">May 29</td>
+            </tr>
+            <tr>
+                <td data-sort="Kumano Gongen">Kumano Gongen</td>
+                <td data-sort="187">187</td>
+                <td data-sort="85">85</td>
+                <td data-sort="0714">July 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Saturnus">Saturnus</td>
+                <td data-sort="167">167</td>
+                <td data-sort="105">105</td>
+                <td data-sort="1217">December 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Manticore">Manticore</td>
+                <td data-sort="185">185</td>
+                <td data-sort="97">97</td>
+                <td data-sort="0910">September 10</td>
+            </tr>
+            <tr>
+                <td data-sort="Kyoma">Kyoma</td>
+                <td data-sort="180">180</td>
+                <td data-sort="97">97</td>
+                <td data-sort="1202">December 2</td>
+            </tr>
+            <tr>
+                <td data-sort="Curren & MS-C1">Curren & MS-C1</td>
+                <td data-sort="141">141 (no unit)</td>
+                <td data-sort="28">28 (no unit)</td>
+                <td data-sort="0319">March 19</td>
+            </tr>
+            <tr>
+                <td data-sort="Snegurochka">Snegurochka</td>
+                <td data-sort="130">130</td>
+                <td data-sort="5">5 (core only)</td>
+                <td data-sort="1225">December 25</td>
+            </tr>
+            <tr>
+                <td data-sort="Yig">Yig</td>
+                <td data-sort="229">229 (total length: 925cm)</td>
+                <td data-sort="889">889</td>
+                <td data-sort="0716">July 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Apollo">Apollo</td>
+                <td data-sort="156">156</td>
+                <td data-sort="55">55</td>
+                <td data-sort="1003">October 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Jack Frost">Jack Frost</td>
+                <td data-sort="204">204</td>
+                <td data-sort="197">197</td>
+                <td data-sort="0227">February 27</td>
+            </tr>
+            <tr>
+                <td data-sort="Bohemio">Bohemio</td>
+                <td data-sort="181">181</td>
+                <td data-sort="123">123</td>
+                <td data-sort="1031">October 31</td>
+            </tr>
+            <tr>
+                <td data-sort="Xiwangmu">Xiwangmu</td>
+                <td data-sort="146">146</td>
+                <td data-sort="60">60</td>
+                <td data-sort="0303">March 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Nisroch">Nisroch</td>
+                <td data-sort="176">176</td>
+                <td data-sort="129">129</td>
+                <td data-sort="0618">June 18</td>
+            </tr>
+            <tr>
+                <td data-sort="Gargoyle">Gargoyle</td>
+                <td data-sort="207">Adult 207 / Juvenile 55 (approx. 80cm with tail)</td>
+                <td data-sort="810">Adult 810 / Juvenile 5</td>
+                <td data-sort="0316">March 16</td>
+            </tr>
+            <tr>
+                <td data-sort="Jersey Devil">Jersey Devil</td>
+                <td data-sort="188">188</td>
+                <td data-sort="102">102</td>
+                <td data-sort="0121">January 21</td>
+            </tr>
+            <tr>
+                <td data-sort="Inari">Inari</td>
+                <td data-sort="172">172</td>
+                <td data-sort="80">80</td>
+                <td data-sort="0211">February 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Jizo">Jizo</td>
+                <td data-sort="175">175</td>
+                <td data-sort="77">77</td>
+                <td data-sort="0824">August 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Hoover">Hoover</td>
+                <td data-sort="179">179</td>
+                <td data-sort="118">118</td>
+                <td data-sort="0502">May 2?</td>
+            </tr>
+            <tr>
+                <td data-sort="Onyankopon">Onyankopon</td>
+                <td data-sort="193">193</td>
+                <td data-sort="123">123</td>
+                <td data-sort="0314">March 14</td>
+            </tr>
+            <tr>
+                <td data-sort="Carbuncle">Carbuncle</td>
+                <td data-sort="165">165</td>
+                <td data-sort="94">94</td>
+                <td data-sort="1111">November 11</td>
+            </tr>
+            <tr>
+                <td data-sort="Alberich">Alberich</td>
+                <td data-sort="145">145</td>
+                <td data-sort="85">85</td>
+                <td data-sort="0813">August 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Cinderella">Cinderella</td>
+                <td data-sort="171">171</td>
+                <td data-sort="62">62</td>
+                <td data-sort="1231">December 31</td>
+            </tr>
+            <tr>
+                <td data-sort="Yurugu">Yurugu</td>
+                <td data-sort="183">183</td>
+                <td data-sort="83">83</td>
+                <td data-sort="1129">November 29</td>
+            </tr>
+            <tr>
+                <td data-sort="Azathoth αΩ">Azathoth αΩ</td>
+                <td data-sort="176">176</td>
+                <td data-sort="78">78</td>
+                <td data-sort="0609">June 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Enigma ∀">Enigma ∀</td>
+                <td data-sort="179">Same as Enigma (179)</td>
+                <td data-sort="9999">Unmeasurable</td>
+                <td data-sort="0509">May 9</td>
+            </tr>
+            <tr>
+                <td data-sort="Castro">Castro</td>
+                <td data-sort="183">183</td>
+                <td data-sort="108">108</td>
+                <td data-sort="0522">May 22</td>
+            </tr>
+            <tr>
+                <td data-sort="Cheshire Cat">Cheshire Cat</td>
+                <td data-sort="153">153</td>
+                <td data-sort="57">57</td>
+                <td data-sort="0704">July 4</td>
+            </tr>
+            <tr>
+                <td data-sort="Demiurge">Demiurge</td>
+                <td data-sort="194">194</td>
+                <td data-sort="180">180</td>
+                <td data-sort="0427">April 27</td>
+            </tr>
+            <tr>
+                <td data-sort="Jagannath">Jagannath</td>
+                <td data-sort="176">176</td>
+                <td data-sort="115">115</td>
+                <td data-sort="0218">February 18</td>
+            </tr>
+            <tr>
+                <td data-sort="Glashtyn">Glashtyn</td>
+                <td data-sort="190">190</td>
+                <td data-sort="130">130</td>
+                <td data-sort="0501">May 1</td>
+            </tr>
+            <tr>
+                <td data-sort="Aegipan">Aegipan</td>
+                <td data-sort="158">158</td>
+                <td data-sort="52">52</td>
+                <td data-sort="0517">May 17</td>
+            </tr>
+            <tr>
+                <td data-sort="Koshchei">Koshchei</td>
+                <td data-sort="185">185</td>
+                <td data-sort="0.9">Less than 1 kg (soul only)</td>
+                <td data-sort="1212">December 12</td>
+            </tr>
+            <tr>
+                <td data-sort="Mynoghra">Mynoghra</td>
+                <td data-sort="196">196</td>
+                <td data-sort="83">■83</td>
+                <td data-sort="0619">June 19</td>
+            </tr>
+            <tr>
+                <td data-sort="Vainamoinen">Vainamoinen</td>
+                <td data-sort="192">192</td>
+                <td data-sort="135">135</td>
+                <td data-sort="0228">February 28</td>
+            </tr>
+            <tr>
+                <td data-sort="Cu Chulainn">Cu Chulainn</td>
+                <td data-sort="177">177</td>
+                <td data-sort="80">80</td>
+                <td data-sort="0513">May 13</td>
+            </tr>
+            <tr>
+                <td data-sort="Shisa">Shisa</td>
+                <td data-sort="243">243</td>
+                <td data-sort="243">243</td>
+                <td data-sort="0403">April 3</td>
+            </tr>
+            <tr>
+                <td data-sort="Red Hood">Red Hood</td>
+                <td data-sort="215">215</td>
+                <td data-sort="132">132</td>
+                <td data-sort="0224">February 24</td>
+            </tr>
+            <tr>
+                <td data-sort="Gugalanna">Gugalanna</td>
+                <td data-sort="206">206</td>
+                <td data-sort="170">170</td>
+                <td data-sort="0420">April 20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function sortTable(columnIndex, isNumeric) {
+            const table = document.getElementById("charTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+
+            const currentIsAsc = table.dataset.sortCol === String(columnIndex) && table.dataset.sortDir === "asc";
+            const direction = currentIsAsc ? -1 : 1;
+
+            rows.sort((a, b) => {
+                const cellA = a.cells[columnIndex];
+                const cellB = b.cells[columnIndex];
+
+                const valA = cellA.getAttribute("data-sort") || cellA.textContent.trim();
+                const valB = cellB.getAttribute("data-sort") || cellB.textContent.trim();
+
+                if (isNumeric) {
+                    const numA = parseFloat(valA);
+                    const numB = parseFloat(valB);
+                    
+                    if (isNaN(numA)) return 1 * direction;
+                    if (isNaN(numB)) return -1 * direction;
+                    
+                    return (numA - numB) * direction;
+                } else {
+                    return valA.localeCompare(valB) * direction;
+                }
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+
+            table.dataset.sortCol = columnIndex;
+            table.dataset.sortDir = currentIsAsc ? "desc" : "asc";
+
+            const headers = table.querySelectorAll("th");
+            headers.forEach((th, idx) => {
+                th.textContent = th.textContent.replace(/ [▲▼]/g, "");
+                if (idx === columnIndex) {
+                    th.textContent += currentIsAsc ? " ▼" : " ▲";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
